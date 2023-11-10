@@ -4,34 +4,19 @@ import javax.swing.*;
 
 public class Quiz implements ActionListener{
 	
-	String[] perguntas = 	{
-								"Quais desses não está entre os pilares de POO?",
-							};
-	String[][] respostas = 	{
-								{"Herança","Interface","Abstração","Polimorfismo"},
-							};
-	char[] itens = 		{
-								'A',
-								'B',
-								'C',
-								'C'
-							};
+	String[] perguntas = 	{"Quais desses não está entre os pilares de POO?",};
+	String[][] respostas = 	{{"Herança","Interface","Abstração","Polimorfismo"},};
+	char[] itens = 	{'A','B','C','D'};
 	char palpite;
 	char item;
 	int indice;
-	int palpite_correto =0;
-	int total_perguntas = perguntas.length;
-	int resultado;
+	//int resultado;
 	
 	JFrame frame = new JFrame();
 	JButton botaoA = new JButton();
 	JButton botaoB = new JButton();
 	JButton botaoC = new JButton();
 	JButton botaoD = new JButton();
-	JLabel palpite_labelA = new JLabel();
-	JLabel palpite_labelB = new JLabel();
-	JLabel palpite_labelC = new JLabel();
-	JLabel palpite_labelD = new JLabel();
 	
 	public Quiz() {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
